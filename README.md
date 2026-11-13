@@ -1,15 +1,26 @@
 # Homebrew tap for JYe16
 
+```bash
+brew tap JYe16/tap
+brew trust --tap JYe16/tap     # recent Homebrew requires explicit trust for third-party taps
+```
+
+Both apps are ad-hoc signed but not notarized; the casks clear the download quarantine flag after installing.
+Update with `brew upgrade --cask <name>`, remove with `brew uninstall --cask <name>`
+(add `--zap` to also delete the app's preferences).
+
 ## MDEditor
 
 A native macOS Markdown editor with live preview — <https://github.com/JYe16/mdeditor>
 
 ```bash
-brew tap JYe16/tap
-brew trust --tap JYe16/tap     # recent Homebrew requires explicit trust for third-party taps
 brew install --cask mdeditor
 ```
 
-The app is ad-hoc signed but not notarized; the cask clears the download quarantine flag after installing.
-Update with `brew upgrade --cask mdeditor`, remove with `brew uninstall --cask mdeditor`
-(add `--zap` to also delete its preferences).
+## SysMonitor
+
+A menu-bar system monitor for macOS: CPU, GPU, temperature, memory and network — <https://github.com/JYe16/sysmonitor>
+
+```bash
+brew install --cask sysmonitor
+```
