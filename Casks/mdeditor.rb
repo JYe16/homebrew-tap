@@ -1,6 +1,6 @@
 cask "mdeditor" do
-  version "1.1.0"
-  sha256 "d6e9766d350f35bfda630a2f10945f74198b60394b95867123bcac051fa006f5"
+  version "1.1.1"
+  sha256 "fd4202c5ca5515e5a3762c59ec00a46676cd27869f0c5c5a24cb7c9881b75798"
 
   url "https://github.com/JYe16/mdeditor/releases/download/v#{version}/MDEditor-#{version}.dmg"
   name "MDEditor"
